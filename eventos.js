@@ -1,4 +1,5 @@
-const divSaludar = document.querySelector('div');
-divSaludar.addEventListener('click', function() {
-  alert('Hola! Soy el div');
+const boton = document.querySelector('#saludarButton');
+boton.addEventListener('click', function(event) {
+  event.stopPropagation(); 
+  alert('¡Hola!'); 
 });
